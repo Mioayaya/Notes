@@ -5,3 +5,7 @@ A: 需要框选fbx文件以及 fbm贴图一起导入到unity中，若仍无贴�
 
 ## 2. 导入资源包后着色器丢失
 A: 使用unity自动升级材质，若没有效果需要手动修改渲染为当前渲染线程，比如HDR渲染下 将shader修改为 HDR/Lit,并手动贴图
+
+## 3. 在使用blend tree时，如何避免动画状态生硬切换，比如在键盘输入时，向量从1到0之间切换
+A: 使用一个targetSpeed，使用Mathf.Lerp(目标,当前,插值因子)进行过度，  
+如`currentSpeed = Mathf.Lerp(targetSpeed, currentSpeed, interFactor);`
