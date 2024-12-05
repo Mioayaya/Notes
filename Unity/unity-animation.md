@@ -16,3 +16,7 @@ Parameters新建float变量Speed，将blend tree中的parameter(影响动画的�
 
 ### 1.2 摇杆误触
 在locomotion中MoveProcessors中新增一个Stick Deadzone，在 -0.125~0.125中视为0，不足1同理
+
+### 1.3 InputSystem下实现按下shift持续奔跑，再次按下推出奔跑
+以鸣潮为例，left ctrl切换走路，奔跑，按下shift 冲刺+持续快速奔跑，松开shift仍然保持快速奔跑状态，松开方向键退出。  
+使用blendtree控制4个动画，按下ctrl键切换移动方式，对isRunning 取反，按下shift则对 runFaster 赋值为 true， 在方向键松开事件对 runFaster 赋值为 false。
