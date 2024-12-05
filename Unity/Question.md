@@ -13,3 +13,5 @@ A: 使用一个targetSpeed，使用Mathf.Lerp(目标,当前,插值因子)进行�
 ## 4. 在使用InputSystem控制角色移动时，按s角色并没有后退，反而前进，按ad角色后退
 A: 在使用Translate改变角色坐标时，角色默认使用的是自己的坐标系，因此's'转身后，自己的向后是世界坐标系的前，所以会出现'向后运动'的现象，在Translate的参数中添加 以世界位置为基准即可。
 `transform.Translate(Time.deltaTime * currentSpeed * playerMovement, Space.World);`
+
+## 5. 在使用KCC镜头跟随时，镜头移动后，角色移动方向还是原来的坐标系，没有按照当前镜头方向为主方向
