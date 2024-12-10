@@ -5,7 +5,7 @@
 
 ## DataStructure
 - ✅ 单链表
-- ⬜ 循环队列
+- ✅ 循环队列
 - ⬜ KMP
 - ⬜ 二叉树
 - ⬜ BFS
