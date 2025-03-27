@@ -15,3 +15,22 @@
 
 # 流程图
 - [draw.io](https://app.diagrams.net/) 
+
+
+# Node环境安装
+- [Node官网下载](https://nodejs.org/en/download/)
+- cmd `node -v` `npm -v` 查看版本
+- 将npm全局包迁移到 自定义路径中  
+  在node目录下，创建两个新文件夹 `node_cache` `node_global`  
+  打开cmd输入  
+  ```bash
+  npm config set prefix "$\node_global"
+  ```
+  ```bash
+  npm config set cache "$\node_cache"
+  ```
+- 设置环境变量   
+  环境变量 -> 系统变量 -> 新建 `NODE_PATH` value: `$\node_global\node_modules` 
+  用户变量 -> Path `$\npm` 修改为 `$\node_global`
+
+ps: `npm config get prefix` 查看当前global路径
