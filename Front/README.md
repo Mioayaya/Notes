@@ -34,3 +34,23 @@
   用户变量 -> Path `$\npm` 修改为 `$\node_global`
 
 ps: `npm config get prefix` 查看当前global路径
+
+
+# TODO
+- 原型链
+- this绑定
+- promise
+- class
+- 箭头函数
+- 深拷贝、浅拷贝
+- 事件循环
+
+# 计网
+- http
+- TCP
+- cookie、localStorage、session
+- 
+
+## CSS
+- Flex
+-  
