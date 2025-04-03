@@ -7,3 +7,6 @@
 display的值为inline-block、inltable-cell、table-caption、table、inline-table、flex、inline-flex、grid、inline-grid
 - position的值为absolute或fixed
 
+## 应用场景
+- 防止 margin 塌陷
+- 清除浮动
